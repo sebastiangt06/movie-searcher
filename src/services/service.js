@@ -4,7 +4,7 @@ export const searchMovies = async ({ search }) => {
   try {
     if (search) {
       let response = await fetch(
-        ` http://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`
+        ` https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`
       ); //CON ASYNC AWAIT
       let json = await response.json();
       /* fetch(` http://www.omdbapi.com/?apikey=f8123dc&s=${search}`) CON PROMESAS
